@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Commons — Independent Canadian News</title>
   <meta name="description" content="Smart, independent Canadian news and analysis. Not government-funded. Never will be.">
+  <meta property="og:title" content="The Commons — Independent Canadian News">
+  <meta property="og:description" content="Smart Canadian news and analysis, every morning. Free.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="breaking-bar">
+  <span>Breaking</span> Armed man shot dead at Mar-a-Lago by Secret Service — FBI investigating
+</div>
 
 <header class="site-header">
   <div class="header-inner">
@@ -24,105 +32,170 @@
 </header>
 
 <section class="newsletter-hero">
-  <h2>Get the daily briefing. Free.</h2>
-  <p>Join thousands of Canadians who start their day with The Commons.</p>
+  <h2>Canadian news without the spin.</h2>
+  <p class="hero-sub">Join <strong>10,000+ Canadians</strong> who get the daily briefing every morning at 6 AM.</p>
   <form class="newsletter-form">
     <input type="email" placeholder="you@email.com" required>
-    <button type="submit" class="btn-subscribe">Subscribe</button>
+    <button type="submit" class="btn-subscribe">Subscribe — Free</button>
   </form>
+  <p class="hero-proof">No spam. No government funding. Unsubscribe anytime.</p>
 </section>
 
 <main class="container">
 
   <!-- TOP STORY -->
   <section class="top-story">
-    <span class="section-label">Top Story</span>
+    <div class="section-header">
+      <h2><span class="accent">●</span> Top Story</h2>
+    </div>
     <div class="top-story-card">
-      <div class="top-story-img">Photo: Secret Service perimeter at Mar-a-Lago</div>
+      <div class="top-story-img">
+        <img src="https://images.unsplash.com/photo-1585155770913-5f0e48712780?w=800&h=500&fit=crop" alt="Secret Service at Mar-a-Lago" loading="lazy">
+      </div>
       <div class="top-story-content">
-        <div class="category-tag">World · Breaking</div>
+        <div class="category-tag">Breaking · World</div>
         <h1><a href="article.html">Armed Man Shot Dead at Mar-a-Lago as Secret Service Tightens Perimeter</a></h1>
-        <p class="summary">An armed man in his twenties was killed by Secret Service agents after breaching the secure perimeter at Trump's Florida resort overnight. Trump was not present. The FBI is leading the investigation.</p>
-        <p class="meta">The Commons · Feb 22, 2026 · 3 min read</p>
+        <p class="summary">An armed man in his twenties was killed by Secret Service agents after breaching the secure perimeter at Trump's Florida resort overnight. Trump was not present. The FBI is leading the investigation. No motive has been confirmed.</p>
+        <div class="meta">
+          <span>The Commons</span>
+          <span class="meta-dot">·</span>
+          <span>Feb 22, 2026</span>
+          <span class="meta-dot">·</span>
+          <span>3 min read</span>
+          <span class="meta-dot">·</span>
+          <span class="timestamp"><span class="live-dot"></span>Updated 2h ago</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- TODAY'S BRIEFING -->
-  <section class="briefing">
-    <span class="section-label">Today's Briefing</span>
-    <ul class="briefing-list">
-      <li class="briefing-item">
-        <span class="briefing-emoji">🏒</span>
-        <div>
-          <h3><a href="#">Canada Falls Short Again: U.S. Takes Olympic Hockey Gold in Milano-Cortina</a></h3>
-          <p class="briefing-take">Hellebuyck was unbeatable. Crosby: "We did everything but score." Third consecutive final loss for Canada.</p>
+  <!-- TWO-COL: BRIEFING + SIDEBAR -->
+  <div class="two-col">
+    <div>
+      <div class="section-header">
+        <h2>Today's Briefing</h2>
+      </div>
+      <p class="timestamp" style="margin-bottom:0.8rem;">Sunday, February 22, 2026 · <span class="live-dot"></span>Updating</p>
+      <ul class="briefing-list">
+        <li class="briefing-item">
+          <span class="briefing-number">1</span>
+          <div>
+            <h3><a href="#">Canada Falls Short Again: U.S. Takes Olympic Hockey Gold in Milano-Cortina</a></h3>
+            <p class="briefing-take">Hellebuyck was unbeatable. Crosby: "We did everything but score." Third consecutive Olympic final loss for Canada's men's team.</p>
+          </div>
+        </li>
+        <li class="briefing-item">
+          <span class="briefing-number">2</span>
+          <div>
+            <h3><a href="article.html">Trump's 10% Tariff Spares CUSMA-Compliant Canadian Goods — But There's a Catch</a></h3>
+            <p class="briefing-take">The exemption exists on paper. Small businesses lack the legal resources to prove compliance at the border.</p>
+          </div>
+        </li>
+        <li class="briefing-item">
+          <span class="briefing-number">3</span>
+          <div>
+            <h3><a href="#">Supreme Court Strikes Down Trump's Emergency Tariff Powers</a></h3>
+            <p class="briefing-take">Ruling calls use of emergency powers "unlawful." Trump doubles down. Markets brace for Monday.</p>
+          </div>
+        </li>
+        <li class="briefing-item">
+          <span class="briefing-number">4</span>
+          <div>
+            <h3><a href="#">60% of Canadian Parents Will Offer Free Room and Board During Post-Secondary</a></h3>
+            <p class="briefing-take">The cost of living crisis is reshaping how families approach education. A new normal nobody planned for.</p>
+          </div>
+        </li>
+        <li class="briefing-item">
+          <span class="briefing-number">5</span>
+          <div>
+            <h3><a href="#">Canada's New Chief Public Health Officer Puts Trust Restoration First</a></h3>
+            <p class="briefing-take">Dr. Joss Reimer wants a "proactive approach" to misinformation. Whether that helps or hurts depends entirely on execution.</p>
+          </div>
+        </li>
+        <li class="briefing-item">
+          <span class="briefing-number">6</span>
+          <div>
+            <h3><a href="#">Porter Flight Slides Off Taxiway at Hamilton Airport</a></h3>
+            <p class="briefing-take">Edmonton-to-Hamilton flight lost traction on landing. No injuries. Transport Canada reviewing winter runway protocols.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="two-col-sidebar">
+      <div class="section-header">
+        <h2>Opinion</h2>
+      </div>
+      <div class="sidebar-item">
+        <span class="category-tag">Ontario</span>
+        <h3><a href="#">The Landlord-Tenant Board Is Broken. Everyone Knows It. Nobody Fixes It.</a></h3>
+        <p class="meta" style="margin-top:0.3rem;">4 min read</p>
+      </div>
+      <div class="sidebar-item">
+        <span class="category-tag">Sports</span>
+        <h3><a href="#">Three Finals, Three Losses: Time to Rethink How Canada Builds Hockey Teams</a></h3>
+        <p class="meta" style="margin-top:0.3rem;">5 min read</p>
+      </div>
+      <div class="sidebar-item">
+        <span class="category-tag">Economy</span>
+        <h3><a href="#">Canada's Trade Leverage Is Weaker Than Ottawa Admits</a></h3>
+        <p class="meta" style="margin-top:0.3rem;">6 min read</p>
+      </div>
+
+      <div style="margin-top:1.5rem;">
+        <div class="section-header">
+          <h2>Listen</h2>
         </div>
-      </li>
-      <li class="briefing-item">
-        <span class="briefing-emoji">💰</span>
-        <div>
-          <h3><a href="article.html">Trump's New 10% Tariff Spares CUSMA-Compliant Canadian Goods — But There's a Catch</a></h3>
-          <p class="briefing-take">The exemption exists on paper. Small businesses lack the legal resources to prove compliance at the border.</p>
+        <div class="audio-player-wrap" style="padding:1rem 1.2rem;">
+          <div style="display:flex;gap:0.8rem;align-items:center;width:100%;">
+            <span class="audio-icon">🎙️</span>
+            <div class="audio-info" style="flex:1;">
+              <h3 style="font-size:0.9rem;">6 AM Update</h3>
+              <p style="font-size:0.72rem;">Feb 22 · 5 min</p>
+            </div>
+          </div>
+          <audio controls preload="metadata" style="width:100%;margin-top:0.6rem;">
+            <source src="audio-6am.mp3" type="audio/mpeg">
+          </audio>
         </div>
-      </li>
-      <li class="briefing-item">
-        <span class="briefing-emoji">⚖️</span>
-        <div>
-          <h3><a href="#">Supreme Court Strikes Down Trump's Emergency Tariff Powers</a></h3>
-          <p class="briefing-take">Ruling calls use of emergency powers "unlawful." Trump doubles down, calls tariffs "vital." Markets brace for Monday.</p>
-        </div>
-      </li>
-      <li class="briefing-item">
-        <span class="briefing-emoji">🏠</span>
-        <div>
-          <h3><a href="#">60% of Canadian Parents Will Offer Free Room and Board During Post-Secondary</a></h3>
-          <p class="briefing-take">The cost of living crisis is reshaping how families approach education. A new normal nobody planned for.</p>
-        </div>
-      </li>
-      <li class="briefing-item">
-        <span class="briefing-emoji">🏥</span>
-        <div>
-          <h3><a href="#">Canada's New Chief Public Health Officer: Restoring Trust Is Priority One</a></h3>
-          <p class="briefing-take">Dr. Joss Reimer wants a "proactive approach" to countering misinformation. The question is what that means in practice.</p>
-        </div>
-      </li>
-      <li class="briefing-item">
-        <span class="briefing-emoji">✈️</span>
-        <div>
-          <h3><a href="#">Porter Flight Slides Off Taxiway at Hamilton Airport</a></h3>
-          <p class="briefing-take">Edmonton-to-Hamilton flight lost traction on landing. No injuries. Transport Canada is reviewing winter runway protocols.</p>
-        </div>
-      </li>
-    </ul>
-  </section>
+      </div>
+    </div>
+  </div>
 
   <!-- ANALYSIS -->
   <section class="content-section">
-    <span class="section-label">Analysis</span>
+    <div class="section-header">
+      <h2>Analysis</h2>
+    </div>
     <div class="article-grid">
       <article class="article-card">
-        <div class="card-img">Analysis</div>
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&h=340&fit=crop" alt="Shipping containers" loading="lazy">
+        </div>
         <div class="card-body">
-          <div class="category-tag">Economy</div>
+          <span class="category-tag">Economy</span>
           <h3><a href="article.html">The CUSMA Carveout Is Meaningless If Small Businesses Can't Navigate It</a></h3>
-          <p class="summary">Ottawa needs to move fast — not with diplomacy, but with practical help for Canadian exporters right now.</p>
+          <p class="summary">Ottawa needs to move fast — not with diplomacy, but with practical help for Canadian exporters.</p>
           <p class="meta">4 min read</p>
         </div>
       </article>
       <article class="article-card">
-        <div class="card-img">Analysis</div>
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=340&fit=crop" alt="Supreme Court" loading="lazy">
+        </div>
         <div class="card-body">
-          <div class="category-tag">Defence</div>
+          <span class="category-tag">Defence</span>
           <h3><a href="#">What the Supreme Court Tariff Ruling Actually Means for Canada</a></h3>
-          <p class="summary">It's a win for now. But Trump has other tools, and Congress may give him new ones.</p>
+          <p class="summary">It's a win for now. But Trump has other tools, and Congress may hand him new ones.</p>
           <p class="meta">5 min read</p>
         </div>
       </article>
       <article class="article-card">
-        <div class="card-img">Analysis</div>
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=340&fit=crop" alt="Stock market" loading="lazy">
+        </div>
         <div class="card-body">
-          <div class="category-tag">Markets</div>
+          <span class="category-tag">Markets</span>
           <h3><a href="#">The Loonie at 71 Cents: What Monday Looks Like for Canadian Markets</a></h3>
           <p class="summary">Between tariff chaos and a Supreme Court ruling, the TSX opens into uncertainty.</p>
           <p class="meta">3 min read</p>
@@ -131,73 +204,44 @@
     </div>
   </section>
 
-  <!-- OPINION -->
-  <section class="content-section">
-    <span class="section-label">Opinion</span>
-    <div class="article-grid">
-      <article class="article-card">
-        <div class="card-img">Opinion</div>
-        <div class="card-body">
-          <div class="category-tag">Ontario</div>
-          <h3><a href="#">The Landlord-Tenant Board Is Broken. Everyone Knows It. Nobody Fixes It.</a></h3>
-          <p class="summary">The Brampton case making national news isn't an anomaly. It's the system working exactly as designed — slowly, badly, and at everyone's expense.</p>
-          <p class="meta">4 min read</p>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="card-img">Opinion</div>
-        <div class="card-body">
-          <div class="category-tag">Sports</div>
-          <h3><a href="#">Three Olympic Finals, Three Losses: Time to Rethink How Canada Builds Hockey Teams</a></h3>
-          <p class="summary">Talent isn't the problem. The selection process is. Canada keeps assembling all-star rosters that play like strangers.</p>
-          <p class="meta">5 min read</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
 </main>
 
-<!-- MID-PAGE CTA -->
+<!-- MID CTA -->
 <section class="mid-cta">
-  <h2>Join 10,000+ Canadians who start their day informed.</h2>
-  <p>The Commons daily briefing. Free. No government funding. No corporate spin. Just the news that matters.</p>
+  <h2>The daily briefing Canadians actually read.</h2>
+  <p>News, analysis, and opinion — every morning at 6 AM. Free forever.</p>
   <form class="newsletter-form">
     <input type="email" placeholder="you@email.com" required>
     <button type="submit" class="btn-subscribe">Subscribe Free</button>
   </form>
 </section>
 
-<main class="container">
-
-  <!-- AUDIO -->
-  <section class="audio-section">
-    <span class="section-label">Listen</span>
-    <div class="audio-player-wrap">
-      <div class="audio-info">
-        <h3>The Commons — 6 AM Update</h3>
-        <p>February 22, 2026 · 5 min</p>
-      </div>
-      <audio controls preload="metadata">
-        <source src="audio-6am.mp3" type="audio/mpeg">
-        Your browser does not support audio.
-      </audio>
-    </div>
-  </section>
-
-</main>
-
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-links">
+    <div class="footer-brand">
+      <span class="site-logo">The <span>Commons</span></span>
+      <p>Independent Canadian news and analysis. Built for readers who think for themselves.</p>
+    </div>
+    <div class="footer-links-col">
+      <h4>Sections</h4>
+      <a href="#">News</a>
+      <a href="#">Analysis</a>
+      <a href="#">Opinion</a>
+      <a href="#">Podcast</a>
+      <a href="#">Markets</a>
+    </div>
+    <div class="footer-links-col">
+      <h4>Company</h4>
       <a href="#">About</a>
       <a href="#">Contact</a>
       <a href="#">Advertise</a>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
     </div>
-    <p>© 2026 The Commons News</p>
-    <p class="footer-tagline">Independent. Not government-funded. Never will be.</p>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-tagline">For free Canadians.</p>
+    <p class="footer-copy">© 2026 The Commons News · Independent. Not government-funded. Never will be.</p>
   </div>
 </footer>
 
