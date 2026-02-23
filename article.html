@@ -12,17 +12,24 @@
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="site-logo">The <span>Commons</span></a>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="main-nav">
-      <a href="index.html">News</a>
-      <a href="article.html">Analysis</a>
-      <a href="#">Opinion</a>
-      <a href="#">Podcast</a>
+  <div class="header-top">
+    <span class="header-date">Sunday, February 22, 2026</span>
+    <a href="index.html" class="site-logo">THE <span>COMMONS</span></a>
+    <div class="header-actions">
+      <button class="btn-login">Sign In</button>
       <a href="subscribe.html" class="btn-subscribe">Subscribe</a>
-    </nav>
+    </div>
   </div>
+  <nav class="header-nav">
+    <a href="index.html">News</a>
+    <a href="article.html" class="active">Analysis</a>
+    <a href="#">Opinion</a>
+    <a href="#">Markets</a>
+    <a href="#">Podcast</a>
+    <a href="#">Ontario</a>
+    <a href="#">Alberta</a>
+    <a href="#">BC</a>
+  </nav>
 </header>
 
 <div class="container">
@@ -31,23 +38,23 @@
     <span class="category-tag">Analysis · Economy · 4 min read</span>
     <h1>The CUSMA Carveout Is Meaningless If Small Businesses Can't Navigate It</h1>
     <p class="subhead">Ottawa needs to move fast — not with diplomacy, but with practical help for Canadian exporters right now.</p>
-    <div class="meta">
+    <div class="meta" style="display:flex;align-items:center;gap:0.6rem;">
       <span>By <strong>The Commons</strong></span>
-      <span class="meta-dot">·</span>
+      <span style="color:var(--border);">·</span>
       <span>February 22, 2026</span>
-      <span class="meta-dot">·</span>
-      <span class="timestamp"><span class="live-dot"></span>Updated 3h ago</span>
+      <span style="color:var(--border);">·</span>
+      <span style="font-size:0.72rem;color:var(--text-muted);">Updated 3h ago</span>
       <div class="share-links">
         <button class="share-btn">Share</button>
-        <button class="share-btn">Tweet</button>
+        <button class="share-btn">𝕏</button>
         <button class="share-btn">Copy</button>
       </div>
     </div>
   </div>
 
   <div class="article-hero-img">
-    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=900&h=450&fit=crop" alt="Shipping containers at port">
-    <p class="img-caption">Canadian exporters face mounting paperwork to prove CUSMA compliance. Photo: Unsplash</p>
+    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=900&h=420&fit=crop" alt="Shipping containers at Canadian port">
+    <p class="img-caption">Canadian exporters face mounting paperwork to prove CUSMA compliance at the border. Photo: Unsplash</p>
   </div>
 
   <div class="article-body">
@@ -93,14 +100,11 @@
   </div>
 
   <section class="related-section">
-    <div class="section-header">
-      <h2>Related</h2>
-    </div>
-    <div class="article-grid">
+    <hr class="section-divider">
+    <div class="section-title">Related</div>
+    <div class="article-grid-3">
       <article class="article-card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=340&fit=crop" alt="Supreme Court" loading="lazy">
-        </div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=340&fit=crop" alt="Supreme Court" loading="lazy"></div>
         <div class="card-body">
           <span class="category-tag">Defence</span>
           <h3><a href="#">What the Supreme Court Tariff Ruling Actually Means for Canada</a></h3>
@@ -108,9 +112,7 @@
         </div>
       </article>
       <article class="article-card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=340&fit=crop" alt="Markets" loading="lazy">
-        </div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=340&fit=crop" alt="Markets" loading="lazy"></div>
         <div class="card-body">
           <span class="category-tag">Markets</span>
           <h3><a href="#">The Loonie at 71 Cents: What Monday Looks Like</a></h3>
@@ -129,38 +131,47 @@
 
 </div>
 
-<section class="mid-cta">
-  <h2>The daily briefing Canadians actually read.</h2>
-  <p>News, analysis, and opinion — every morning at 6 AM. Free forever.</p>
-  <form class="newsletter-form">
-    <input type="email" placeholder="you@email.com" required>
-    <button type="submit" class="btn-subscribe">Subscribe Free</button>
-  </form>
-</section>
+<!-- NEWSLETTER INLINE -->
+<div class="container">
+  <div class="newsletter-inline" style="margin-bottom:2rem;">
+    <div class="newsletter-inline-text">
+      <h3>The daily briefing Canadians actually read.</h3>
+      <p>News, analysis, and opinion — every morning at 6 AM. Free.</p>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="you@email.com" required>
+      <button type="submit" class="btn-subscribe">Subscribe Free</button>
+    </form>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <span class="site-logo">The <span>Commons</span></span>
+      <span class="site-logo">THE <span>COMMONS</span></span>
       <p>Independent Canadian news and analysis. Built for readers who think for themselves.</p>
     </div>
-    <div class="footer-links-col">
+    <div class="footer-col">
       <h4>Sections</h4>
-      <a href="#">News</a><a href="#">Analysis</a><a href="#">Opinion</a><a href="#">Podcast</a>
+      <a href="#">News</a><a href="#">Analysis</a><a href="#">Opinion</a><a href="#">Markets</a>
     </div>
-    <div class="footer-links-col">
+    <div class="footer-col">
+      <h4>Regions</h4>
+      <a href="#">Ontario</a><a href="#">Alberta</a><a href="#">BC</a><a href="#">Quebec</a>
+    </div>
+    <div class="footer-col">
       <h4>Company</h4>
       <a href="#">About</a><a href="#">Contact</a><a href="#">Advertise</a><a href="#">Privacy</a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p class="footer-tagline">For free Canadians.</p>
+  <div class="footer-statement">
+    <h2>FOR FREE CANADIANS.</h2>
     <p class="footer-copy">© 2026 The Commons News · Independent. Not government-funded. Never will be.</p>
   </div>
 </footer>
 
 <div class="mobile-cta-bar">
-  <a href="subscribe.html" class="btn-subscribe">Subscribe to The Commons — Free</a>
+  <a href="subscribe.html" class="btn-subscribe">Subscribe — Free</a>
 </div>
 
 <script src="script.js"></script>
